@@ -148,7 +148,7 @@ class Instructor extends Lambdasian {
     
   }
   grade(student,subject){
-    return `${student} recieves a perfect score on ${subject}`
+    return `${student.name} recieves a perfect score on ${subject}`
 
   }
 
@@ -209,10 +209,10 @@ class ProjectManager extends Instructor {
     this.favInstructor = Par.favInstructor; 
   }
   standUp(slackChannel){
-    return `${name} announces to ${slackChannel}, @channel standy times!`;
+    return `${this.name} announces to ${slackChannel}, @channel standy times!`;
   }
-  debugsCode(studen, subject){
-    return `${name} debugs ${this.name}'s code on ${subject}`;
+  debugsCode(student, subject){
+    return `${this.name} debugs ${student.name}'s code on ${subject}`;
 
   }
 
